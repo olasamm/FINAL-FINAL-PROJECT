@@ -3,6 +3,7 @@ import './Navnar.css';
 import { Link } from 'react-router-dom'
 
 
+
 const Navbar = () => {
   return (
     <>
@@ -22,7 +23,7 @@ const Navbar = () => {
                   E-portal
                 </button>
                 <ul className="dropdown-menu dropdown-menu-light border-0">
-                  <li><a className="dropdown-item portal" href="/signup">Lecturer</a></li>
+                  <Link><a className="dropdown-item portal" to="/signup">Lecturer</a></Link>
                  <Link> <a className="dropdown-item portal" to="/signup">Student</a></Link>
                 </ul>
               </li>

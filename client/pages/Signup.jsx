@@ -21,7 +21,7 @@ const Signup = () => {
         const allValue = {name, mail, password} 
 
         console.log(allValue)
-        const url = 'http://localhost:9000/submit'
+        const url = 'https://final-final-project-7sg3.vercel.app/submit'
         axios.post(url, allValue)
         .then((res) => {
           console.log(res)
