@@ -23,8 +23,8 @@ const Navbar = () => {
                   E-portal
                 </button>
                 <ul className="dropdown-menu dropdown-menu-light border-0">
-                  <Link><a className="dropdown-item portal" to="/signup">Lecturer</a></Link>
-                 <Link> <a className="dropdown-item portal" to="/signup">Student</a></Link>
+                  <Link className="dropdown-item portal" to="/signup">Lecturer</Link>
+                 <Link className="dropdown-item portal" to="/signup">Student</Link>
                 </ul>
               </li>
             </div>
