@@ -1,0 +1,32 @@
+body {
+  overflow-x: hidden;
+}
+
+.track {
+  background-color:  rgb(61, 129, 171); /* Replace with your desired color */
+  min-height: 62vh;
+  width: 100%;
+}
+
+.card {
+  margin-top: 4rem; /* Adjust the value as needed */
+  border: 2px solid #ccc; /* Add a border to the card */
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Make cards full width on smaller screens */
+    margin: 1.5rem auto; /* Center the cards */
+  }
+
+  .gap-5 {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 2rem; /* Add spacing between stacked cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+}

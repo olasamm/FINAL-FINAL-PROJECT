@@ -1,0 +1,17 @@
+.student{
+    font-size: 20px;
+}
+
+
+.pic {
+    display: block;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    overflow-x: hidden;
+  }

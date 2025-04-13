@@ -1,0 +1,22 @@
+.pic{
+    width: 30%;
+    height: auto; /* Allow height to adjust naturally */
+
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+}
+
+.all{
+    background-color: #421cf7;
+}
+
+@media (max-width: 600px) {
+    .pic {
+        width: 80%;
+        height: auto; /* Allow height to adjust naturally */
+    }
+}body {
+    overflow-x: hidden;
+  }
+
