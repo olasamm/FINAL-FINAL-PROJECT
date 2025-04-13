@@ -22,7 +22,7 @@ const Navbar = () => {
                   E-portal
                 </button>
                 <ul className="dropdown-menu dropdown-menu-light border-0">
-                  <li><a className="dropdown-item portal" href="">Lecturer</a></li>
+                  <li><a className="dropdown-item portal" href="/signup">Lecturer</a></li>
                  <Link> <a className="dropdown-item portal" to="/signup">Student</a></Link>
                 </ul>
               </li>
