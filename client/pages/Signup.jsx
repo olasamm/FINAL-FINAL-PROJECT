@@ -2,6 +2,7 @@ import  { useState } from 'react'
 import './Signup.css'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 
@@ -71,7 +72,7 @@ const Signup = () => {
       <div className="col-md-6 d-flex flex-column justify-content-center align-items-center text-white bg-primary p-5">
         <h3 className="text-center">Welcome back to<br/>Website</h3>
         <p className="mt-3">Already have an account?</p>
-        <button className="btn btn-dark rounded-pill px-4">SIGN IN</button>
+        <Link> <button className="btn btn-dark rounded-pill px-4" to="/signin" >SIGN IN</button> </Link>
       </div>
 
     </div>
