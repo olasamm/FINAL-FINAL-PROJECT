@@ -22,7 +22,8 @@ const Signup = () => {
         const allValue = {name, mail, password} 
 
         console.log(allValue)
-        const url = 'https://final-final-project-2.onrender.com/submit/'
+        // const url = 'https://final-final-project-2.onrender.com/submit/'
+        const url = 'http://localhost:5000/submit'
         axios.post(url, allValue)
         .then((res) => {
           console.log(res)

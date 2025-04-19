@@ -16,8 +16,8 @@ const Signin = () => {
         const allValue = {mail, password} 
 
         console.log(allValue)
-        const url = 'https://final-final-project-2.onrender.com/signin'
-        // const url = 'http://localhost:5000/signin'
+        // const url = 'https://final-final-project-2.onrender.com/signin'
+        const url = 'http://localhost:5000/signin'
         axios.post(url, allValue)
         .then((res) => {
           console.log(res)
