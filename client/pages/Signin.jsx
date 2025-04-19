@@ -16,7 +16,7 @@ const Signin = () => {
         const allValue = {mail, password} 
 
         console.log(allValue)
-        const url = 'http://localhost:9000/signin'
+        const url = 'https://final-final-project-7sg3.vercel.app/signin'
         axios.post(url, allValue)
         .then((res) => {
           console.log(res)
