@@ -8,27 +8,30 @@ const Signin = () => {
 
     const [mail, setMail] = useState("")
     const [password, setPassword] = useState("")
-    const [errorMessage, setErrorMessage] = useState(""); // Add state for error message
+    const [errorMessage, setErrorMessage] = useState(""); 
 
-    const handleSignup = (e) => {
+
+    const handleSignup = async (e) => {
         e.preventDefault()
 
         const allValue = {mail, password} 
 
         console.log(allValue)
         const url = 'http://localhost:9000/signin'
-        // const url = 'https://final-final-project-2.onrender.com/signin'
-        axios.post(url, allValue)
-        .then((res) => {
-          localStorage.setItem('userId', res.data._id)
-          // console.log(res)
-            navigate('/dashboard')
-        })
-        .catch((err) => {
+        try {
+        const res = await  axios.post(url, allValue)
+          navigate('/dashboard')
+        } catch (err) {
           console.error(err);
           setErrorMessage("User does not exist"); // Set error message
-        });
-    }
+          
+        }
+    //     .then((res) => {
+    //       // console.log(res)
+    //     })
+    //     .catch((err) => {
+    //     });
+     }
   return (
     <>
     

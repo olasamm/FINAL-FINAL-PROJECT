@@ -40,14 +40,17 @@ app.post('/signin', async(req, res) => {
         const {mail, password} = req.body;
         const user = await User.findOne({mail, password}); // Removed 'new' keyword
         if (user) {
-            res.status(200).json({ message: 'Login successfully' });
+            res.status(200).json({ 
+                message: 'Login successfully',
+                _id: User._id, 
+                name: User.name });
         } else {
             res.status(401).json({ message: 'Invalid credentials' });
         }
     } catch (err) {
         console.log(err);
         res.status(500).json({ message: 'Error during login' });
-        res.json({ _id: User._id, name: User.name});
+        
     }
 });
 

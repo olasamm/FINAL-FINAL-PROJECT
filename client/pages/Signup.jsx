@@ -21,6 +21,9 @@ const Signup = () => {
 
         const allValue = {name, mail, password} 
 
+
+        
+
         console.log(allValue)
         const url = 'http://localhost:9000/submit'
         // const url = 'https://final-final-project-2.onrender.com/submit/'
