@@ -76,7 +76,7 @@ const Signup = () => {
       <div className="col-md-6 d-flex flex-column justify-content-center align-items-center text-white bg-primary p-5">
         <h3 className="text-center">Welcome back to<br/>Website</h3>
         <p className="mt-3">Already have an account?</p>
-        <Link> <button className="btn btn-dark rounded-pill px-4" to="/signin" >SIGN IN</button> </Link>
+       <a href="signin"><button className="btn btn-dark rounded-pill px-4"  >SIGN IN</button> </a> 
       </div>
 
     </div>
