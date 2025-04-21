@@ -24,6 +24,9 @@ mongoose.connect(URI)
 });
 
 
+
+
+
 app.post('/submit', async(req, res) => {
     try {
         const {name, mail, password} = req.body;
@@ -41,9 +44,7 @@ app.post('/signin', async(req, res) => {
         const user = await User.findOne({mail, password}); // Removed 'new' keyword
         if (user) {
             res.status(200).json({ 
-                message: 'Login successfully',
-                _id: User._id, 
-                name: User.name });
+                message: 'Login successfully',});
         } else {
             res.status(401).json({ message: 'Invalid credentials' });
         }
@@ -57,12 +58,6 @@ app.post('/signin', async(req, res) => {
 app.get("/", (req, res) => {
     res.send("Hello World!");
 });
-
-app.get("/get-user", async (req, res) => {
-    const user = await User.findById(req.params.id).select("name");
-    if (!user) return res.status(404).json({ message: "User not found" });
-    res.json(user);
-})
 
 
 
