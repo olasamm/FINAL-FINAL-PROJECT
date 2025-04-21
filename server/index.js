@@ -55,7 +55,7 @@ app.get("/", (req, res) => {
     res.send("Hello World!");
 });
 
-app.get("/user", async (req, res) => {
+app.get("/get-user", async (req, res) => {
     const user = await User.findById(req.params.id).select("name");
     if (!user) return res.status(404).json({ message: "User not found" });
     res.json(user);

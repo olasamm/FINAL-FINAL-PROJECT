@@ -16,11 +16,11 @@ const Signin = () => {
         const allValue = {mail, password} 
 
         console.log(allValue)
-        const url = 'http://localhost:5000/signin'
+        const url = 'http://localhost:9000/signin'
         // const url = 'https://final-final-project-2.onrender.com/signin'
         axios.post(url, allValue)
         .then((res) => {
-          localStorage.setItem('userIsd', res.data._id)
+          localStorage.setItem('userId', res.data._id)
           // console.log(res)
             navigate('/dashboard')
         })

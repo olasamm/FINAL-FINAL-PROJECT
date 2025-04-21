@@ -34,7 +34,7 @@ const Dashboards = () => {
       if (!userId) return; 
 
       try {
-        const res = await axios.get(`http://localhost:5000/user/${userId}`)
+        const res = await axios.getItem(`http://localhost:5000/get-user/${userId}`)
         name(res.data.name)
       } catch (error) {
         res.status(500).json({ message: 'Error fetching user data', error });
@@ -65,7 +65,7 @@ const Dashboards = () => {
             </div>
             <div className="d-flex align-items-center gap-2">
               <img src="https://i.pravatar.cc/40?u=samsam" className="rounded-circle" alt="User" />
-              <span>{'samsam'}</span>
+              <span>{ name }</span>
             </div>
           </div>
             </div>
