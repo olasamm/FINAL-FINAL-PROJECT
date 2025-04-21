@@ -20,7 +20,8 @@ const Signin = () => {
         const url = 'http://localhost:5000/signin'
         axios.post(url, allValue)
         .then((res) => {
-          console.log(res)
+          localStorage.setItem('userIsd', res.data._id)
+          // console.log(res)
             navigate('/dashboard')
         })
         .catch((err) => {

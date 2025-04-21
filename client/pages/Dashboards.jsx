@@ -5,6 +5,7 @@ import Sidebar from "../components/Sidebar";
 import Navbars from '../components/Navbars';
 
 const Dashboards = () => {
+  const [name, setName] = useState("")
 
   const [currentDateTime, setCurrentDateTime] = useState({
     date: '',
@@ -25,6 +26,24 @@ const Dashboards = () => {
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
+
+
+  useEffect(() => { 
+    const fetchUser = async () => {
+      const userId = localStorage.getItem('userId')
+      if (!userId) return; 
+
+      try {
+        const res = await axios.get(`http://localhost:5000/user/${userId}`)
+        name(res.data.name)
+      } catch (error) {
+        res.status(500).json({ message: 'Error fetching user data', error });
+      }
+    }
+  })
+
+
+
 
   return (
       <div>

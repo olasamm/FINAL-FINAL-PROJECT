@@ -47,12 +47,19 @@ app.post('/signin', async(req, res) => {
     } catch (err) {
         console.log(err);
         res.status(500).json({ message: 'Error during login' });
+        res.json({ _id: User._id, name: User.name});
     }
 });
 
 app.get("/", (req, res) => {
     res.send("Hello World!");
 });
+
+app.get("/user", async (req, res) => {
+    const user = await User.findById(req.params.id).select("name");
+    if (!user) return res.status(404).json({ message: "User not found" });
+    res.json(user);
+})
 
 
 
