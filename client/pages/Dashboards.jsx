@@ -38,7 +38,7 @@ const Dashboards = () => {
           <div className="container-fluid">
               <div className="row">
                   {/* Sidebar */}
-                  <div className="col-lg-3 col-md-4 d-none d-md-block">
+                  <div className="col-lg-3 col-md-4 d-block">
                       <Sidebar />
                   </div>
 
