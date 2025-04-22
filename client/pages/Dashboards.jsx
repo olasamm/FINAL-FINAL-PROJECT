@@ -73,10 +73,11 @@ const Dashboards = () => {
                   <div className="col-md-10">
                     <h5>Welcome, username</h5>
                     <p>You have 2 uncomplete assignments.</p>
+                    <p>You have 2 uncomplete assignments.</p>
                   </div>
                   <div className="col-md-2 d-flex align-items-center justify-content-center">
                     <img
-                      src="https://via.placeholder.com/80"
+                      src="https://img.freepik.com/free-vector/work-progress-concept-illustration_114360-7183.jpg?semt=ais_hybrid&w=740"
                       alt="Illustration"
                       className="img-fluid"
                     />
@@ -91,19 +92,19 @@ const Dashboards = () => {
                   <div className="col-sm-6 col-md-3" key={idx}>
                     <div className="card h-100">
                       <img
-                        src="https://via.placeholder.com/150"
+                        src="https://img.freepik.com/free-vector/flat-creativity-concept-illustration_52683-64279.jpg?semt=ais_hybrid&w=740"
                         className="card-img-top"
                         alt="Assignment"
                       />
                       <div className="card-body">
                         <p className="card-text mb-2">
                           Subject<br />
-                          <small>Deadline: date and time</small>
+                          <small>Deadline: {currentDateTime.time}, {currentDateTime.date}</small>
                         </p>
                         <div className="d-flex align-items-center">
                           <img
-                            src="https://via.placeholder.com/30"
-                            className="rounded-circle me-2"
+                            src="https://img.freepik.com/free-vector/hand-drawn-black-teacher-clipart-illustration_23-2150985077.jpg?ga=GA1.1.1587942493.1745306649&semt=ais_hybrid&w=740"
+                            className="rounded-circle me-2 w-25"
                             alt="Teacher"
                           />
                           <small>Teacher's name</small>
