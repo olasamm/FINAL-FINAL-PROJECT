@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import Sidebar from '../components/Sidebar';
 import Navbars from '../components/Navbars';
-import './dashboard.css';
+import './Dashboard.css';
 
 const Dashboards = () => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
