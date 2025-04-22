@@ -98,7 +98,7 @@ const Dashboards = () => {
                       />
                       <div className="card-body">
                         <p className="card-text mb-2">
-                          Subject<br />
+                          Subject <br />
                           <small>Deadline: {currentDateTime.time}, {currentDateTime.date}</small>
                         </p>
                         <div className="d-flex align-items-center">

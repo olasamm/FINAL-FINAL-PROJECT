@@ -60,7 +60,7 @@ const Signin = () => {
             <input type="password" className="form-control rounded-pill" placeholder="Password"  value={password} onChange={e => setPassword(e.target.value)}/>
           </div>
           <div className="d-grid">
-            <button type="submit" onClick={handleSignup} className="btn btn-outline-dark rounded-pill">SIGN UP</button>
+            <button type="submit" onClick={handleSignup} className="btn btn-outline-dark rounded-pill">SIGN IN</button>
           </div>
         </form>
       </div>
