@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
+import { Link } from 'react-router-dom';
 import {FaTachometerAlt, FaUser, FaTasks, FaFileAlt, FaChartBar, FaUsers, FaBook, FaCog, FaSignOutAlt,  } from "react-icons/fa";
 
 const Sidebar = () => {
@@ -10,7 +11,7 @@ const Sidebar = () => {
                 <ul className="nav flex-column">
                   <li className="nav-item"><a href="#" className="nav-link active"><FaTachometerAlt className="me-2" />Dashboard</a></li>
                   <li className="nav-item"><a href="#" className="nav-link"><FaUser className="me-2" />My Profile</a></li>
-                  <li className="nav-item"><a href="#" className="nav-link"><FaTasks className="me-2" />My Assignments</a></li>
+                  <li className="nav-item"><Link to="/Assignment" className="nav-link"><FaTasks className="me-2" />My Assignments</Link></li>
                   <li className="nav-item"><a href="#" className="nav-link"><FaFileAlt className="me-2" />My Submissions</a></li>
                   <li className="nav-item"><a href="#" className="nav-link"><FaChartBar className="me-2" />My Performance</a></li>
                   <li className="nav-item"><a href="#" className="nav-link"><FaUsers className="me-2" />Collaborations</a></li>

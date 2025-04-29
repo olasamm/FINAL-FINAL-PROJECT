@@ -16,9 +16,9 @@ const Dashboards = () => {
     setIsSidebarVisible(!isSidebarVisible);
     console.log('Sidebar visibility:', !isSidebarVisible);
   };
-  return (
-    
 
+  
+  return (
 
 
     <div>
