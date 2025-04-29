@@ -1,11 +1,7 @@
-.navbar {
-    background-color: #421cf7;
-}
-.portal {
-    color: #421cf7;
-}
-
-
-body {
-    overflow-x: hidden;
+.navbar-spacing > div {
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
   }
+
+
+  

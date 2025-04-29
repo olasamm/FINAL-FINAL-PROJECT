@@ -3,10 +3,9 @@ import './Sidebar.css';
 import {FaTachometerAlt, FaUser, FaTasks, FaFileAlt, FaChartBar, FaUsers, FaBook, FaCog, FaSignOutAlt,  } from "react-icons/fa";
 
 const Sidebar = () => {
-   
 
     return (
-         <nav className="sidebar p-3 border-end">
+         <nav className="sidebar p-3 border-end sidebar-content">
                 <h4 className="text-primary">WEBSITE</h4>
                 <ul className="nav flex-column">
                   <li className="nav-item"><a href="#" className="nav-link active"><FaTachometerAlt className="me-2" />Dashboard</a></li>
