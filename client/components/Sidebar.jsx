@@ -12,7 +12,7 @@ const Sidebar = () => {
                   <li className="nav-item"><a href="#" className="nav-link active"><FaTachometerAlt className="me-2" />Dashboard</a></li>
                   <li className="nav-item"><a href="#" className="nav-link"><FaUser className="me-2" />My Profile</a></li>
                   <li className="nav-item"><Link to="/Assignment" className="nav-link"><FaTasks className="me-2" />My Assignments</Link></li>
-                  <li className="nav-item"><a href="#" className="nav-link"><FaFileAlt className="me-2" />My Submissions</a></li>
+                  <li className="nav-item"><Link to="/Submission" className="nav-link"><FaTasks className="me-2" />My Submission</Link></li>
                   <li className="nav-item"><a href="#" className="nav-link"><FaChartBar className="me-2" />My Performance</a></li>
                   <li className="nav-item"><a href="#" className="nav-link"><FaUsers className="me-2" />Collaborations</a></li>
                   <li className="nav-item"><a href="#" className="nav-link"><FaBook className="me-2" />Resources</a></li>

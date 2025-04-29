@@ -65,6 +65,7 @@ const Assignment = () => {
     
     <div className="d-flex justify-content-between align-items-center px-3 py-2 bg-light">
      
+     <div className='filter-container g-4'> 
       <div className="dropdown">
         <button
           className=" dropdown-toggle shadow-sm"
@@ -80,20 +81,22 @@ const Assignment = () => {
           <li><a className="dropdown-item" href="#">Option 2</a></li>
         </ul>
       </div>
+      </div>
 
       
-      <div className="input-group  shadow-sm">
-        <input
-          type="text"
-          className="form-control"
-          placeholder="Search Here...."
-          aria-label="Search"
-        />
-        <span className="input-group-text bg-white border-start-0">
-          <i className="bi bi-search"></i>
-        </span>
-      </div>
-    </div>
+       {/* Search Input */}
+  <div className="input-group shadow-sm">
+    <input
+      type="text"
+      className="form-control"
+      placeholder="Search Here...."
+      aria-label="Search"
+    />
+    <span className="input-group-text bg-white border-start-0">
+      <i className="bi bi-search"></i>
+    </span>
+  </div>
+</div>
 
 
 
@@ -111,10 +114,10 @@ const Assignment = () => {
             <h5 className="fw-bold">Advanced Mathematics Assignment #1</h5>
             <div className="d-flex text-muted">
               <span className="me-4">
-                <i className="bi bi-person-fill me-2"><FaUser /></i>Sarah Blakely
+                <i className="bi bi-person-fill me-2"></i>Sarah Blakely
               </span>
               <span>
-                <i className="bi bi-book-fill me-2"><FaBookReader /></i>Statistics 101
+                <i className="bi bi-book-fill me-2"></i>Statistics 101
               </span>
             </div>
           </div>
@@ -132,10 +135,10 @@ const Assignment = () => {
             <h5 className="fw-bold">Advanced Mathematics Assignment #1</h5>
             <div className="d-flex text-muted">
               <span className="me-4">
-                <i className="bi bi-person-fill me-2"><FaUser /></i>Sarah Blakely
+                <i className="bi bi-person-fill me-2"></i>Sarah Blakely
               </span>
               <span>
-                <i className="bi bi-book-fill me-2"><FaBookReader /></i>Statistics 101
+                <i className="bi bi-book-fill me-2"></i>Statistics 101
               </span>
             </div>
           </div>
@@ -152,10 +155,10 @@ const Assignment = () => {
             <h5 className="fw-bold">Advanced Mathematics Assignment #1</h5>
             <div className="d-flex text-muted">
               <span className="me-4">
-                <i className="bi bi-person-fill me-2"><FaUser /></i>Sarah Blakely
+                <i className="bi bi-person-fill me-2"></i>Sarah Blakely
               </span>
               <span>
-                <i className="bi bi-book-fill me-2"><FaBookReader /></i>Statistics 101
+                <i className="bi bi-book-fill me-2"></i>Statistics 101
               </span>
             </div>
           </div>
@@ -174,10 +177,10 @@ const Assignment = () => {
             <h5 className="fw-bold">Advanced Mathematics Assignment #1</h5>
             <div className="d-flex text-muted">
               <span className="me-4">
-                <i className="bi bi-person-fill me-2"><FaUser /></i>Sarah Blakely
+                <i className="bi bi-person-fill me-2"></i>Sarah Blakely
               </span>
               <span>
-                <i className="bi bi-book-fill me-2"><FaBookReader /></i>Statistics 101
+                <i className="bi bi-book-fill me-2"></i>Statistics 101
               </span>
             </div>
           </div>

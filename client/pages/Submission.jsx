@@ -111,10 +111,10 @@ const Submission = () => {
             <h5 className="fw-bold">Advanced Mathematics Assignment #1</h5>
             <div className="d-flex text-muted">
               <span className="me-4">
-                <i className="bi bi-person-fill me-2"><FaUser /></i>Sarah Blakely
+                <i className="bi bi-person-fill me-2"></i>Sarah Blakely
               </span>
               <span>
-                <i className="bi bi-book-fill me-2"><FaBookReader /></i>Statistics 101
+                <i className="bi bi-book-fill me-2"></i>Statistics 101
               </span>
             </div>
           </div>
@@ -132,10 +132,10 @@ const Submission = () => {
             <h5 className="fw-bold">Advanced Mathematics Assignment #1</h5>
             <div className="d-flex text-muted">
               <span className="me-4">
-                <i className="bi bi-person-fill me-2"><FaUser /></i>Sarah Blakely
+                <i className="bi bi-person-fill me-2"></i>Sarah Blakely
               </span>
               <span>
-                <i className="bi bi-book-fill me-2"><FaBookReader /></i>Statistics 101
+                <i className="bi bi-book-fill me-2"></i>Statistics 101
               </span>
             </div>
           </div>
@@ -152,10 +152,10 @@ const Submission = () => {
             <h5 className="fw-bold">Advanced Mathematics Assignment #1</h5>
             <div className="d-flex text-muted">
               <span className="me-4">
-                <i className="bi bi-person-fill me-2"><FaUser /></i>Sarah Blakely
+                <i className="bi bi-person-fill me-2"></i>Sarah Blakely
               </span>
               <span>
-                <i className="bi bi-book-fill me-2"><FaBookReader /></i>Statistics 101
+                <i className="bi bi-book-fill me-2"></i>Statistics 101
               </span>
             </div>
           </div>
@@ -174,10 +174,10 @@ const Submission = () => {
             <h5 className="fw-bold">Advanced Mathematics Assignment #1</h5>
             <div className="d-flex text-muted">
               <span className="me-4">
-                <i className="bi bi-person-fill me-2"><FaUser /></i>Sarah Blakely
+                <i className="bi bi-person-fill me-2"></i>Sarah Blakely
               </span>
               <span>
-                <i className="bi bi-book-fill me-2"><FaBookReader /></i>Statistics 101
+                <i className="bi bi-book-fill me-2"></i>Statistics 101
               </span>
             </div>
           </div>
