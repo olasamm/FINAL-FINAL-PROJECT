@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+
 
 const Signin = () => {
 
@@ -69,7 +71,7 @@ const Signin = () => {
       <div className="col-md-6 d-flex flex-column justify-content-center align-items-center text-white bg-primary p-5">
         <h3 className="text-center">Welcome to Website </h3>
         <p className="mt-3">New here</p>
-        <button className="btn btn-dark rounded-pill px-4">LOGIN</button>
+       <Link to="/signup"><button className="btn btn-dark rounded-pill px-4">SIGN UP</button></Link> 
       </div>
 
     </div>
