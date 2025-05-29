@@ -5,6 +5,7 @@ require("dotenv").config();
 const bodyParser = require("body-parser");
 const app = express();
 const cors = require("cors");
+const User = require('../models/User'); 
 const URI = process.env.uri
 
 port = process.env.PORT || 5000;
@@ -38,22 +39,28 @@ app.post('/submit', async(req, res) => {
         res.status(500).json({ message: 'Error saving data' });
     }
 });
-app.post('/signin', async(req, res) => {
+
+
+
+
+app.post('/signin', async (req, res) => {
     try {
-        const {mail, password} = req.body;
-        const user = await User.findOne({mail, password}); // Removed 'new' keyword
-        if (user) {
-            res.status(200).json({ 
-                message: 'Login successfully',});
-        } else {
-            res.status(401).json({ message: 'Invalid credentials' });
+        const { mail, password } = req.body;
+        const user = await User.findOne({ mail });
+        if (!user) {
+            return res.status(404).json({ error: 'User not found' });
         }
-    } catch (err) {
-        console.log(err);
-        res.status(500).json({ message: 'Error during login' });
-        
+        if (user.password !== password) {
+            return res.status(401).json({ error: 'Invalid password' });
+        }
+        res.status(200).json({ message: 'User signed in successfully' });
+    } catch (error) {
+        console.error('Error signing in:', error);
+        res.status(500).json({ error: 'Internal server error' });
     }
-});
+  });
+  
+
 
 app.get("/", (req, res) => {
     res.send("Hello World!");

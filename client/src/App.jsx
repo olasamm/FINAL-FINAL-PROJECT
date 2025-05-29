@@ -22,7 +22,7 @@ function App() {
       <Routes>
         { <Route path="/" element={< LandingPage />} /> }
         { <Route path="/signup" element={< Signup />} /> }
-        { <Route path="/signin" element={< Signin />} /> }
+        { <Route path="/Signin" element={< Signin />} /> }
         { <Route path="/dashboard" element={< Dashboards />} /> } 
         { <Route path="/assignment" element={< Assignment/>} /> } 
         { <Route path="/open" element={< Open/>} /> } 

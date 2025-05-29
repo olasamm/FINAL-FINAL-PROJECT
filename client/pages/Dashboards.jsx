@@ -3,6 +3,7 @@ import { FaBars } from 'react-icons/fa';
 import Sidebar from '../components/Sidebar';
 import Navbars from '../components/Navbars';
 import './Dashboard.css';
+import '../pages/Signin'
 
 const Dashboards = () => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
@@ -17,8 +18,12 @@ const Dashboards = () => {
     console.log('Sidebar visibility:', !isSidebarVisible);
   };
 
+
+
+  
   
   return (
+
 
 
     <div>

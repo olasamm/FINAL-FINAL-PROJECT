@@ -1,5 +1,5 @@
 .footer {
-  background-color: #421cf7;
+  background-color: #23194f;
   color: #fff;
   padding: 1.5rem 0;
   text-align: center;
@@ -28,22 +28,22 @@
 @media (max-width: 768px) {
   .footer-links {
     display: flex;
-    flex-direction: column; /* Stack links vertically */
-    gap: 0.5rem; /* Add spacing between links */
+    flex-direction: column; 
+    gap: 0.5rem; 
   }
 
   .footer-links a {
-    margin: 0; /* Remove horizontal margins */
+    margin: 0; 
   }
 }
 
 @media (max-width: 480px) {
   .footer {
-    padding: 1rem; /* Adjust padding for smaller screens */
+    padding: 1rem;
   }
 
   .footer-links {
-    font-size: 0.9rem; /* Adjust font size */
+    font-size: 0.9rem; 
   }
 }
 

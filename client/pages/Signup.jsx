@@ -14,69 +14,96 @@ const Signup = () => {
     const [name, setName] = useState("")
     const [mail, setmail] = useState("")
     const [password, setPassword] = useState("")
+    const [message, setMessage] = useState("");
+    const [messageType, setMessageType] = useState("");
+
+
 
     const handleSignup = (e) => { 
-        e.preventDefault()
+       
+      e.preventDefault();
 
-
-        const allValue = {name, mail, password} 
-
-
+      if (!name || !mail || !password) {
+        setMessage("Please fill all the fields");
+        setMessageType("error");
+        setTimeout(() => setMessage(""), 2000);
+        return;
+      }
+  
+      if (password.length < 6) {
+        setMessage("Password must be at least 6 characters long");
+        setMessageType("error");
+        setTimeout(() => setMessage(""), 2000);
+        return;
+      }
+  
+  
+  
+  
+      const allData = {name, mail, password}
+      // console.log(allData);
+  
+      const url = 'https://final-final-project-4.onrender.com/submit';
+      axios.post(url, allData)
+      .then((res) => {
+        console.log(res.data);
+        if (res.status === 201 || res.status === 200) {
+          setMessage("User Created Successfully");
+          setMessageType("success"); 
+          setTimeout(() => navigate("/Signin"), 3000); 
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+        setMessage("User Already Exists");
+        setMessageType("error"); 
+        setTimeout(() => setMessage(""), 3000);
+      })
+  
         
-
-        console.log(allValue)
-        const url = 'https://final-final-project-4.onrender.com/submit'
-        // const url = 'https://final-final-project-2.onrender.com/submit/'
-        axios.post(url, allValue)
-        .then((res) => {
-          console.log(res)
-            navigate('/signin')
-        })
-        .catch((err) => {
-          console.error(err);
-        });
         
-        
-    }
-  return (
+      }
+      return (
+   
     <>
     
     <div className="container-fluid vh-100">
     <div className="row h-100">
       
-      {/* <!-- Left Side: Create Account --> */}
-      <div className="col-md-6 d-flex flex-column justify-content-center align-items-center bg-white text-dark p-5">
+    
+      <div className="col-md-6 d-flex flex-column justify-content-center align-items-center bg-white  p-5">
         <h3 className="mb-4">Create Account</h3>
 
-        {/* <!-- Social Icons (using placeholder buttons) --> */}
-        <div className="d-flex gap-3 mb-4">
-          <button className="btn btn-outline-secondary rounded-circle px-3">IG</button>
-          <button className="btn btn-outline-secondary rounded-circle px-3">G</button>
-          <button className="btn btn-outline-secondary rounded-circle px-3">GH</button>
-        </div>
-
-        {/* <!-- Form --> */}
+        {message && (
+  <p
+    className={`alert mt-3 text-center ${
+      messageType === "success" ? "alert-success" : "alert-danger"
+    }`}
+  >
+    {message}
+  </p>
+)}
         <form className="w-75" method='POST' action={Signup}>
           <div className="mb-3">
-            <input type="text" className="form-control rounded-pill" placeholder="Name" value={name} onChange={e => setName(e.target.value)}/>
+            <input type="text" className="form-control rounded-pill border-black focus:border-black focus:ring-black" placeholder="Name" value={name} onChange={e => setName(e.target.value)}/>
           </div>
           <div className="mb-3">
-            <input type="email" className="form-control rounded-pill" placeholder="Email" value={mail} onChange={e => setmail(e.target.value)}/> 
+            <input type="email" className="form-control rounded-pill border-black focus:border-black focus:ring-black" placeholder="Email" value={mail} onChange={e => setmail(e.target.value)}/> 
           </div>
           <div className="mb-3">
-            <input type="password" className="form-control rounded-pill" placeholder="Password"  value={password} onChange={e => setPassword(e.target.value)}/>
+            <input type="password" className="form-control rounded-pill border-black focus:border-black focus:ring-black" placeholder="Password"  value={password} onChange={e => setPassword(e.target.value)}/>
           </div>
           <div className="d-grid">
-            <button type="submit" onClick={handleSignup} className="btn btn-outline-dark rounded-pill">SIGN UP</button>
+            <button type="submit" onClick={handleSignup} className="btn btn-outline-dark rounded-pill">REGISTER</button>
           </div>
         </form>
       </div>
 
-      {/* <!-- Right Side: Sign In --> */}
+
       <div className="col-md-6 d-flex flex-column justify-content-center align-items-center text-white bg-primary p-5">
         <h3 className="text-center">Welcome back to<br/>Website</h3>
         <p className="mt-3">Already have an account?</p>
-     <Link to="/Signin">  <button className="btn btn-dark rounded-pill px-4"  > SIGN IN</button> </Link>
+     <Link to="/Signin">  <button className="btn btn-dark rounded-pill px-4"  > LOGIN</button> </Link>
       </div>
 
     </div>

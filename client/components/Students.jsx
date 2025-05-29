@@ -1,23 +1,39 @@
 import React from 'react'
 import './Student.css';
+import student from '../src/assets/third.jpg'; 
 
 const Students = () => {
   return (
     <>
-     <div className="container-fluid text-center mt-5 ">
-        <div className="row">
-            <div className="col-12 col-md-6 my-5">
-                <h4 className="fw-bold mx-4">For Student</h4>
-                <p className="mx-4 my-3 student fs-10 fs-md-5">
-                Easily submit your assignment, track <br /> deadlines, and receive Feedback-all in <br /> one place. Stay organized and never miss <br /> a deadline again. Our platform is designed <br /> to make learning smoother and stress-free. <br /> Sign up today and stay ahead
-                </p>
-                <button type="button" className='btn btn-primary border-rounder-0'>Sign up</button>
-            </div>
-            <div className="col-12 col-md-6">
-                <img src="https://s3-alpha-sig.figma.com/img/8383/f06e/84f003d5d49cb0e040b003d840886c10?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=M4~20Ms53A7jUwJcRU5ewvaLihh0QN1A~pyBbTrE4PCdKfO~kh7aLV1u6GrkBcv0eTmpipSNqGiupkG3FKCKVLG3NV0xg6U9HYIUeTvbeVepRTSAU99rX41oMg92dkeE90-l5HHUD7uF8UNSbsYqTevp6N1FeN9odVvL-GEZOg-RZNZIFsSxun7LqZjtUOG42CZHSqOYxGe4RlnGP6KgU8dLSQjuk5q4guxAi0BYUrRhaAr0bJbFpYqxn~MzrJtERxEMaUPjnAMU4VcTYPkqJCAXMJaLMzUN1vOcpS9zrc3zUz~6ldPU2TKu7zgpq5Pt0FiS0I3QRT7iCF3EC-w9JQ__" alt="" className='img-fluid' />
-            </div>
+     <section className="container-fluid text-center mt-5 px-3 px-md-5">
+      <div className="row align-items-center">
+        <div className="col-12 col-md-6 my-5">
+          <h4 className="fw-bold mx-4 " style={{ color: '#23194f' }} >For Students</h4>
+          <p className="mx-4 my-3 student fs-6 text-muted">
+            Easily submit your assignments, track deadlines, <br /> and receive feedback—all in one place. <br />
+            Stay organized and never miss a deadline again. <br />
+             Our platform is designed to make learning <br />
+            smoother and stress-free. Sign up today and stay ahead!
+          </p>
+          <button 
+            type="button" 
+            className="btn  rounded-pill px-4 py-2 shadow" style={{ background: '#23194f', color: 'white' }} 
+          >
+            Sign Up
+          </button>
+        </div>
+
+      
+        <div className="col-12 col-md-6">
+          <img 
+            src={student}
+            alt="Student working on assignments" 
+            className="img-fluid rounded shadow-lg animate-fade-in"
+            style={{ maxWidth: '100%', height: 'auto', maxHeight: '500px' }} 
+          />
         </div>
       </div>
+    </section>
     </>
   )
 }

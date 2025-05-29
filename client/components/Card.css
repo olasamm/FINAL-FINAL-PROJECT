@@ -1,32 +1,44 @@
-body {
-  overflow-x: hidden;
+/* General Section Styling */
+.card-section {
+  background: linear-gradient(135deg, #231947, #231947);
+  padding: 60px 0;
 }
 
-.track {
-  background-color:  rgb(61, 129, 171); /* Replace with your desired color */
-  min-height: 62vh;
-  width: 100%;
-}
-
+/* Card Styling */
 .card {
-  margin-top: 4rem; /* Adjust the value as needed */
-  border: 2px solid #ccc; /* Add a border to the card */
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Body Styling */
+.card-body {
+  padding: 30px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #343a40;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .card {
-    width: 100%; /* Make cards full width on smaller screens */
-    margin: 1.5rem auto; /* Center the cards */
+  .card-title {
+    font-size: 1.25rem;
   }
 
-  .gap-5 {
-    flex-direction: column; /* Stack cards vertically */
-    gap: 2rem; /* Add spacing between stacked cards */
-  }
-}
-
-@media (max-width: 480px) {
-  .card {
-    padding: 1rem; /* Adjust padding for smaller screens */
+  .card-text {
+    font-size: 0.9rem;
   }
 }
