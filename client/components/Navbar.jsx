@@ -34,7 +34,7 @@ const Navbar = () => {
                 </button>
                 <ul className="dropdown-menu dropdown-menu-light border-0">
                   <li>
-                    <Link className="dropdown-item portal" to="/signup">Lecturer</Link>
+                    <Link className="dropdown-item portal" to="/LecturerSignup">Lecturer</Link>
                   </li>
                   <li>
                     <Link className="dropdown-item portal" to="/signup">Student</Link>

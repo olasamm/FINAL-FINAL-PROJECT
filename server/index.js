@@ -5,16 +5,15 @@ require("dotenv").config();
 const bodyParser = require("body-parser");
 const app = express();
 const cors = require("cors");
-const User = require('../models/User'); 
 const URI = process.env.uri
 
 port = process.env.PORT || 5000;
-
+const User = require("./model/userModel");
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
-const User = require("./model/userModel");
+
 
 mongoose.connect(URI)
 .then(() => {
