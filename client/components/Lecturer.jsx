@@ -26,6 +26,7 @@ const Lecturer = () => {
              Our platform is designed to make 
             teaching smoother and stress-free.  <br />
             Sign up today and empower your students!
+            <h1></h1>
           </p>
           <button 
             type="button" 
