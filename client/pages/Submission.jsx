@@ -180,6 +180,7 @@ const Submission = () => {
                 <i className="bi bi-book-fill me-2"></i>Statistics 101
               </span>
             </div>
+            
           </div>
           <div className="text-end">
             <p className="mb-2">March 14, 2025</p>
