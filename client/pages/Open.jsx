@@ -208,7 +208,6 @@ const Open = () => {
 
 
 
-      {/* {<!-- From Uiverse.io by vinodjangid07 --> } */}
       <center>
         <Link to="/submit">
 <button class="button">

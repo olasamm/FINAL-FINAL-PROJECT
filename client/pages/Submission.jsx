@@ -39,6 +39,9 @@ const Submission = () => {
 
     
 
+
+    {/* Sidebar */}
+      
     <div
   className={`col-lg-3 col-md-4 sidebar-container ${
     isSidebarVisible ? 'd-block' : 'd-none d-lg-block'
@@ -93,6 +96,8 @@ const Submission = () => {
     </div>
 
 
+
+
         <h5 className="my-5">My Assignments</h5>
 
 
@@ -115,7 +120,7 @@ const Submission = () => {
           </div>
           <div className="text-end">
             <p className="mb-2">March 14, 2025</p>
-           <Link to="/view"><button className="btn btn-primary btn-sm">View</button></Link> 
+           <Link to="/open"><button className="btn btn-primary btn-sm">View</button></Link> 
           </div>
         </div>
       </div>
@@ -136,7 +141,7 @@ const Submission = () => {
           </div>
           <div className="text-end">
             <p className="mb-2">March 14, 2025</p>
-            <Link to="/"><button className="btn btn-primary btn-sm">View</button></Link> 
+            <Link to="/open"><button className="btn btn-primary btn-sm">View</button></Link> 
           </div>
         </div>
     </div>
@@ -156,7 +161,7 @@ const Submission = () => {
           </div>
           <div className="text-end">
             <p className="mb-2">March 14, 2025</p>
-            <Link to="/"><button className="btn btn-primary btn-sm">View</button></Link> 
+            <Link to="/open"><button className="btn btn-primary btn-sm">View</button></Link> 
           </div>
         </div>
     </div>
@@ -178,7 +183,7 @@ const Submission = () => {
           </div>
           <div className="text-end">
             <p className="mb-2">March 14, 2025</p>
-            <Link to="/"><button className="btn btn-primary btn-sm">View</button></Link> 
+            <Link to="/open"><button className="btn btn-primary btn-sm">View</button></Link> 
           </div>
         </div>
     </div>

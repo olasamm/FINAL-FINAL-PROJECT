@@ -110,7 +110,7 @@ const LecturerSubmission = () => {
           <div className="text-end">
             <p className="mb-2 text-muted">January 10, 2025 11:34 PM</p>
             <div className="d-flex gap-2 justify-content-end">
-             <Link to="view"> <button className="btn btn-sm btn-primary">View</button></Link>
+             <Link to="/lecturer-view"> <button className="btn btn-sm btn-primary">View</button></Link>
               <button className="btn btn-sm btn-success">Accept</button>
               <button className="btn btn-sm btn-danger">Reject</button>
             </div>
@@ -118,7 +118,7 @@ const LecturerSubmission = () => {
         </div>
       </div>
 
-      {/* User Card 2 */}
+
       <div className="card mb-3 shadow-sm border-0 rounded">
         <div className="card-body d-flex justify-content-between align-items-center">
           <div>
@@ -128,7 +128,7 @@ const LecturerSubmission = () => {
           <div className="text-end">
             <p className="mb-2 text-muted">January 10, 2025 11:34 PM</p>
             <div className="d-flex gap-2 justify-content-end">
-            <Link to="view"> <button className="btn btn-sm btn-primary">View</button></Link>
+            <Link to="/lecturer-view"> <button className="btn btn-sm btn-primary">View</button></Link>
             </div>
           </div>
         </div>
@@ -143,7 +143,7 @@ const LecturerSubmission = () => {
           <div className="text-end">
             <p className="mb-2 text-muted">January 10, 2025 11:34 PM</p>
             <div className="d-flex gap-2 justify-content-end">
-            <Link to="view"> <button className="btn btn-sm btn-primary">View</button></Link>
+            <Link to="/lecturer-view"> <button className="btn btn-sm btn-primary">View</button></Link>
               <button className="btn btn-sm btn-success">Accept</button>
               <button className="btn btn-sm btn-danger">Reject</button>
             </div>
@@ -175,7 +175,7 @@ const LecturerSubmission = () => {
           <div className="text-end">
             <p className="mb-2 text-muted">January 10, 2025 11:34 PM</p>
             <div className="d-flex gap-2 justify-content-end">
-              <button className="btn btn-sm btn-primary">View</button>
+            <Link to="/lecturer-view"> <button className="btn btn-sm btn-primary">View</button></Link>
             </div>
           </div>
         </div>
