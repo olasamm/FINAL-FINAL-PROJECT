@@ -7,11 +7,11 @@ import Navbars from '../../components/Navbars';
 
 
 const LecturerDashboard = () => {
-  const [isSidebarVisible, setIsSidebarVisible] = useState(false); // Moved outside the return statement
+  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
   const [currentDateTime, setCurrentDateTime] = useState({
     date: '',
     time: ''
-  }); // Moved outside the return statement
+  }); 
 
   const toggleSidebar = () => {
     setIsSidebarVisible(!isSidebarVisible);
@@ -47,13 +47,11 @@ const LecturerDashboard = () => {
                       <Navbars />
                     </div>
 
-                    {/* Welcome */}
                     <div className="card welcome-card mb-4">
                       <h5>Welcome, username</h5>
                       <p>15 students submits their assignments <br /> You have 2 drafts You have 2 drafts You have 2 drafts You have 2 drafts  </p>
                     </div>
 
-                    {/* Assignments */}
                     <h5 className="mb-3">My Assignments</h5>
                     <div className="row g-4">
                       {[...Array(4)].map((_, index) => (
@@ -80,7 +78,6 @@ const LecturerDashboard = () => {
                       ))}
                     </div>
 
-                    {/* Notifications */}
                     <div className="card notifications-card mt-4">
                       <h6>Recent Activities/Notifications</h6>
                       <ul className="list-unstyled">

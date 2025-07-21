@@ -49,12 +49,10 @@ const LecturerSignin = () => {
         <>
             <div className="container-fluid vh-100">
                 <div className="row h-100">
-                    {/* Left Side: Create Account */}
                     <div className="col-md-6 d-flex flex-column justify-content-center align-items-center bg-white p-5">
                         <h3 className="mb-4">Login to the website</h3>
                         <h3>Lecturer</h3>
 
-                        {/* Form */}
                         <form className="w-75" method="POST">
                             {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
                             <div className="mb-3">
@@ -87,7 +85,6 @@ const LecturerSignin = () => {
                         </form>
                     </div>
 
-                    {/* Right Side: Sign In */}
                     <div className="col-md-6 d-flex flex-column justify-content-center align-items-center text-white bg-primary p-5">
                         <h3 className="text-center">Welcome to Website</h3>
                         <p className="mt-3">New here?</p>

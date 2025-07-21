@@ -9,7 +9,6 @@ import LecturerSidebar from '../../components/LecturerSidebar';
 import Navbars from '../../components/Navbars';
 
 const LecturerAssignment = () => {
-  // Declare state and functions at the top level of the component
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   const toggleSidebar = () => {
@@ -31,7 +30,6 @@ const LecturerAssignment = () => {
 
             <div className="container-fluid">
               <div className="row">
-                {/* Sidebar */}
                 <div
                   className={`col-lg-3 col-md-4 sidebar-container ${
                     isSidebarVisible ? 'd-block' : 'd-none d-lg-block'
@@ -47,8 +45,6 @@ const LecturerAssignment = () => {
                     </div>
 
                    
-
-                    {/* Assignments */}
                     <h5 className="mt-5">Create a New Assignment</h5>
                     <small>Fill in the details below to create an new assignment</small>
                     <div className="mb-3">
@@ -60,7 +56,7 @@ const LecturerAssignment = () => {
         />
       </div>
 
-      {/* Course */}
+
       <div className="mb-3">
         <label className="form-label">Course</label>
         <input
@@ -70,7 +66,7 @@ const LecturerAssignment = () => {
         />
       </div>
 
-      {/* Instructions */}
+
       <div className="mb-3">
         <label className="form-label">Instructions</label>
         <textarea
@@ -80,7 +76,7 @@ const LecturerAssignment = () => {
         ></textarea>
       </div>
 
-      {/* Due Date and Time */}
+
       <div className="row mb-4">
         <div className="col-md-6 mb-3 mb-md-0">
           <label className="form-label">Due Date</label>
@@ -92,7 +88,6 @@ const LecturerAssignment = () => {
         </div>
       </div>
 
-      {/* Questions */}
       {[1, 2, 3].map((num) => (
         <div className="mb-4" key={num}>
           <label className="form-label">Question {num}</label>
@@ -118,12 +113,10 @@ const LecturerAssignment = () => {
         </div>
       ))}
 
-      {/* Add Question Button */}
+
       <div className="mb-4">
         <button className="btn btn-primary">Add Questions</button>
       </div>
-
-      {/* Action Buttons */}
       <div className="d-flex justify-content-between">
         <button className="btn btn-primary">Save as Draft</button>
         <button className="btn btn-primary">Create Assignment</button>

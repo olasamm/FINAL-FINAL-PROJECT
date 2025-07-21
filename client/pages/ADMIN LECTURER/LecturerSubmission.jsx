@@ -80,7 +80,6 @@ const LecturerSubmission = () => {
          </div>
    
          
-          {/* Search Input */}
      <div className="input-group shadow-sm">
        <input
          type="text"
@@ -94,9 +93,6 @@ const LecturerSubmission = () => {
      </div>
    </div>
    
-   
-   
-           {/* Assignments  */}
            <h5 className="my-5">Submission</h5>
    
    
@@ -104,16 +100,13 @@ const LecturerSubmission = () => {
            <div className="g-1">
              
            <div className="container py-4">
-      {/* User Card 1 */}
       <div className="card mb-3 shadow-sm border-0 rounded">
         <div className="card-body d-flex justify-content-between align-items-center">
-          {/* Left: Name and ID */}
           <div>
             <p className="mb-1"><strong>Name:</strong> Grace Ajani</p>
             <p className="mb-0"><strong>ID:</strong> 000000</p>
           </div>
 
-          {/* Right: Date/Time and Buttons */}
           <div className="text-end">
             <p className="mb-2 text-muted">January 10, 2025 11:34 PM</p>
             <div className="d-flex gap-2 justify-content-end">
@@ -141,7 +134,6 @@ const LecturerSubmission = () => {
         </div>
       </div>
 
-      {/* User Card 3 */}
       <div className="card mb-3 shadow-sm border-0 rounded">
         <div className="card-body d-flex justify-content-between align-items-center">
           <div>
@@ -159,7 +151,6 @@ const LecturerSubmission = () => {
         </div>
       </div>
 
-      {/* User Card 4 */}
       <div className="card mb-3 shadow-sm border-0 rounded">
         <div className="card-body d-flex justify-content-between align-items-center">
           <div>
@@ -175,7 +166,6 @@ const LecturerSubmission = () => {
         </div>
       </div>
 
-      {/* User Card 5 */}
       <div className="card mb-3 shadow-sm border-0 rounded">
         <div className="card-body d-flex justify-content-between align-items-center">
           <div>

@@ -77,7 +77,6 @@ const Setting = () => {
               
           
           
-              {/* Sidebar */}
                 
               <div
             className={`col-lg-3 col-md-4 sidebar-container ${
