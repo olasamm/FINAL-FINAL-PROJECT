@@ -114,15 +114,13 @@ const Setting = () => {
           </div>
 
           <div className="mb-3">
-            <label className="form-label">Surname</label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="surname"
-              value="Input"
-              readOnly
-            />
-          </div>
+      <label className="form-label">Surname</label>
+      <input
+        type="text"
+        className="form-control"
+        placeholder="Enter your surname"
+      />
+    </div>
 
           <div className="mb-3">
             <label className="form-label">First Name</label>
@@ -130,8 +128,6 @@ const Setting = () => {
               type="text"
               className="form-control"
               placeholder="first name"
-              value="Input"
-              readOnly
             />
           </div>
 
@@ -141,8 +137,6 @@ const Setting = () => {
               type="text"
               className="form-control"
               placeholder="middle name"
-              value="Input"
-              readOnly
             />
           </div>
 

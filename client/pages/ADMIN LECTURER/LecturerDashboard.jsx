@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 
 import './board.css';
-import Sidebar from '../../components/Sidebar';
 import Navbars from '../../components/Navbars';
+import LecturerSidebar from '../../components/LecturerSidebar';
 
 
 const LecturerDashboard = () => {
@@ -38,7 +38,7 @@ const LecturerDashboard = () => {
                     isSidebarVisible ? 'd-block' : 'd-none d-lg-block'
                   }`}
                 >
-                  <Sidebar />
+                  <LecturerSidebar />
                 </div>
 
                 <div className="col-lg-9 col-md-8 main-content-container">

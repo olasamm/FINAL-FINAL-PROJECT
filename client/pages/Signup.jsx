@@ -37,9 +37,11 @@ const Signup = () => {
         return;
       }
   
+      
+
+      const studentId = `STU-${Date.now()}`;
   
-  
-  
+      localStorage.setItem("currentStudent", JSON.stringify(allData));
       const allData = {name, mail, password}
       // console.log(allData);
   
